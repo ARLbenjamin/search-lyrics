@@ -8,7 +8,7 @@ export class API{
 
       const url= await fetch(`https://api.lyrics.ovh/v1/${this.artista}/${this.cancion}`);
       const consulta= await url.json();
-      
+      console.log(consulta);
       return{
           consulta
       }
